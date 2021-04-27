@@ -1,19 +1,17 @@
-<ion-header [translucent]="true">
+<ion-header>
   <ion-toolbar>
     <ion-buttons slot="start">
       <ion-back-button></ion-back-button>
     </ion-buttons>
-    <ion-title>
-      LATIHAN
-    </ion-title>
+    <ion-title>tab4</ion-title>
   </ion-toolbar>
 </ion-header>
 
-<ion-content [fullscreen]="true">
+<ion-content>
   <ion-card>
     <ion-input type="text" [(ngModel)]="post.Email" placeholder="Email"></ion-input>
     <ion-input type="text" [(ngModel)]="post.First" placeholder="First Name"></ion-input>
     <ion-input type="text" [(ngModel)]="post.Last" placeholder="Last Name"></ion-input>
-    <ion-button (click)="submit()">SIMPAN DATA</ion-button>
+    <!-- <ion-button (click)="submit()">SIMPAN DATA</ion-button> -->
   </ion-card>
 </ion-content>

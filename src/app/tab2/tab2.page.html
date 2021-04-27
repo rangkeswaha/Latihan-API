@@ -1,17 +1,27 @@
 <ion-header [translucent]="true">
   <ion-toolbar>
     <ion-title>
-      Tab 2
+      LATIHAN
     </ion-title>
   </ion-toolbar>
 </ion-header>
 
 <ion-content [fullscreen]="true">
-  <ion-header collapse="condense">
-    <ion-toolbar>
-      <ion-title size="large">Tab 2</ion-title>
-    </ion-toolbar>
-  </ion-header>
+  <ion-list>
+    <ion-item *ngFor="let dPOST of dataPOST">
+      <img src="{{dPOST.avatar}}" alt="">
+      <div style="margin-left: 10px;">
+        {{dPOST.first_name}}
+        {{dPOST.last_name}}
+        <br>
+        {{dPOST.email}}
+      </div>
+    </ion-item>
+  </ion-list>
 
-  <app-explore-container name="Tab 2 page"></app-explore-container>
+  <ion-fab vertical="bottom" horizontal="end" slot="fixed">
+    <ion-fab-button (click)="next()">
+      <ion-icon name="arrow-forward-outline"></ion-icon>
+    </ion-fab-button>
+  </ion-fab>
 </ion-content>
